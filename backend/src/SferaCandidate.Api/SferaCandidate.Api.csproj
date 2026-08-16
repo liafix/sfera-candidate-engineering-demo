@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <RootNamespace>SferaCandidate.Api</RootNamespace>
+    <AssemblyName>SferaCandidate.Api</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SferaCandidate.Application\SferaCandidate.Application.csproj" />
+    <ProjectReference Include="..\SferaCandidate.Infrastructure\SferaCandidate.Infrastructure.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" />
+    <PackageReference Include="Microsoft.OpenApi" />
+  </ItemGroup>
+</Project>

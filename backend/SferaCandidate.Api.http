@@ -1,0 +1,67 @@
+@host = http://localhost:5158
+@assessmentId = REPLACE_AFTER_CREATE
+
+### Create assessment
+POST {{host}}/api/v1/assessments
+
+### Optional synthetic organization name
+PUT {{host}}/api/v1/assessments/{{assessmentId}}/answers/organizationName
+Content-Type: application/json
+
+{
+  "value": "Demo Energy Trading SK"
+}
+
+### Participant type
+PUT {{host}}/api/v1/assessments/{{assessmentId}}/answers/participantType
+Content-Type: application/json
+
+{
+  "value": "trader_or_supplier"
+}
+
+### Primary need
+PUT {{host}}/api/v1/assessments/{{assessmentId}}/answers/primaryNeed
+Content-Type: application/json
+
+{
+  "value": "trading_and_supply"
+}
+
+### Wholesale contracts
+PUT {{host}}/api/v1/assessments/{{assessmentId}}/answers/managesWholesaleContracts
+Content-Type: application/json
+
+{
+  "value": "true"
+}
+
+### Trading/planning support
+PUT {{host}}/api/v1/assessments/{{assessmentId}}/answers/needsTradingOrPlanningSupport
+Content-Type: application/json
+
+{
+  "value": "true"
+}
+
+### Inspect persisted assessment
+GET {{host}}/api/v1/assessments/{{assessmentId}}
+
+### Evaluate — repeating this request should return the same recommendation
+POST {{host}}/api/v1/assessments/{{assessmentId}}/evaluate
+
+### Get persisted result
+GET {{host}}/api/v1/assessments/{{assessmentId}}/result
+
+### Calculate illustrative ROI
+POST {{host}}/api/v1/assessments/{{assessmentId}}/roi
+Content-Type: application/json
+
+{
+  "scenarioName": "reference",
+  "casesPerMonth": 100,
+  "minutesSavedPerCase": 30,
+  "loadedHourlyCost": 40,
+  "annualOperatingCost": 6000,
+  "implementationCost": 12000
+}

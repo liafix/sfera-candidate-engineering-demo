@@ -1,0 +1,51 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SferaCandidate.Domain", "src\SferaCandidate.Domain\SferaCandidate.Domain.csproj", "{6AED1EA9-31ED-5D62-B04F-CD316A12F160}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SferaCandidate.Application", "src\SferaCandidate.Application\SferaCandidate.Application.csproj", "{353C6E36-C402-583D-AA8F-900164A1B994}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SferaCandidate.Infrastructure", "src\SferaCandidate.Infrastructure\SferaCandidate.Infrastructure.csproj", "{323D1379-5444-51A9-9648-B211236767DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SferaCandidate.Api", "src\SferaCandidate.Api\SferaCandidate.Api.csproj", "{9A0F63AF-B0A8-585D-90DB-AC15FBEE84AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SferaCandidate.Domain.Tests", "tests\SferaCandidate.Domain.Tests\SferaCandidate.Domain.Tests.csproj", "{BE00FB6B-0089-5517-B439-2AB987B1E17E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SferaCandidate.Api.Tests", "tests\SferaCandidate.Api.Tests\SferaCandidate.Api.Tests.csproj", "{2EA62CC6-C3BC-552D-8622-25C6AEE5BD83}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6AED1EA9-31ED-5D62-B04F-CD316A12F160}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AED1EA9-31ED-5D62-B04F-CD316A12F160}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AED1EA9-31ED-5D62-B04F-CD316A12F160}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AED1EA9-31ED-5D62-B04F-CD316A12F160}.Release|Any CPU.Build.0 = Release|Any CPU
+		{353C6E36-C402-583D-AA8F-900164A1B994}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{353C6E36-C402-583D-AA8F-900164A1B994}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{353C6E36-C402-583D-AA8F-900164A1B994}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{353C6E36-C402-583D-AA8F-900164A1B994}.Release|Any CPU.Build.0 = Release|Any CPU
+		{323D1379-5444-51A9-9648-B211236767DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{323D1379-5444-51A9-9648-B211236767DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{323D1379-5444-51A9-9648-B211236767DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{323D1379-5444-51A9-9648-B211236767DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A0F63AF-B0A8-585D-90DB-AC15FBEE84AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A0F63AF-B0A8-585D-90DB-AC15FBEE84AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A0F63AF-B0A8-585D-90DB-AC15FBEE84AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A0F63AF-B0A8-585D-90DB-AC15FBEE84AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE00FB6B-0089-5517-B439-2AB987B1E17E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE00FB6B-0089-5517-B439-2AB987B1E17E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE00FB6B-0089-5517-B439-2AB987B1E17E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE00FB6B-0089-5517-B439-2AB987B1E17E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EA62CC6-C3BC-552D-8622-25C6AEE5BD83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EA62CC6-C3BC-552D-8622-25C6AEE5BD83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EA62CC6-C3BC-552D-8622-25C6AEE5BD83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EA62CC6-C3BC-552D-8622-25C6AEE5BD83}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
